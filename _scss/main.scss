@@ -1,5 +1,7 @@
+@import "columns";
 @import "reset";
 @import "syntax";
+@import "tables";
 
 body {
     background: white;
@@ -8,4 +10,8 @@ body {
 
 blockquote {
     padding: 0 20px;
+}
+
+label {
+    display: block;
 }
