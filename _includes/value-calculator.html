@@ -1,31 +1,31 @@
+<p><strong>Please enter all values as whole numbers.</strong></p>
+<form action="javascript:void(0);" id="valueForm">
+	<div class="max760 clearfix">
+		<div class="one-half first">
+			<label for="upfrontCost">Initial Cost of Website<br/><i>(including software fees for first year)</i></label><input type="text" name="upfrontCost" value="5000" data-parsley-money />
 
-<strong>Please enter all values as whole numbers.</strong>
+			<label for="monthlyCost">Ongoing Monthly Costs<br/><i>(e.g. hosting fees)</i></label><input type="text" name="monthlyCost" value="29" data-parsley-money />
 
-<form id="valueForm" action="javascript:void(0);">
-<div class="max760 clearfix">
-<div class="one-half first"><label for="upfrontCost">Initial Cost of Website
-<i>(including software fees for first year)</i></label><input name="upfrontCost" type="text" value="5000" data-parsley-money="" /><label for="monthlyCost">Ongoing Monthly Costs
-<i>(e.g. hosting fees)</i></label><input name="monthlyCost" type="text" value="29" data-parsley-money="" />
+			<label for="yearlyCost">Ongoing Yearly Costs<br/><i>(e.g. software renewals)</i></label><input type="text" name="yearlyCost" value="450" data-parsley-money/>
+		</div>
+		<div class="one-half">
+			<label for="monthlyRevenue">Client's Monthly Revenue</label><input type="text" name="monthlyRevenue" value="8000" data-parsley-money/>
 
-<label for="yearlyCost">Ongoing Yearly Costs
-<i>(e.g. software renewals)</i></label><input name="yearlyCost" type="text" value="450" data-parsley-money="" />
+			<label for="percentageIncrease">Projected Increase in Revenue<br/><i>(A percentage. Accepts 10 or 10%)</i></label><input type="text" name="percentageIncrease" value="15" data-parsley-percentage/>
 
-</div>
-<div class="one-half"><label for="monthlyRevenue">Client's Monthly Revenue</label><input name="monthlyRevenue" type="text" value="8000" data-parsley-money="" /><label for="percentageIncrease">Projected Increase in Revenue
-<i>(A percentage. Accepts 10 or 10%)</i></label><input name="percentageIncrease" type="text" value="15" data-parsley-percentage="" />
-
-<label for="numOfMonths">Period of Time to Display</label><select name="numOfMonths">
-<option value="12">1 year</option>
-<option selected="selected" value="24">2 Years</option>
-<option value="36">3 Years</option>
-<option value="48">4 Years</option>
-<option value="60">5 Years</option>
-</select>
-
-</div>
-</div>
-<div class="max760"><input type="submit" value="Show Me the Money" />
-</div>
-</form>&nbsp;
+			<label for="numOfMonths">Period of Time to Display</label><select name="numOfMonths">
+			<option value="12">1 year</option>
+			<option value="24" selected>2 Years</option>
+			<option value="36">3 Years</option>
+			<option value="48">4 Years</option>
+			<option value="60">5 Years</option>
+			</select>
+		</div>
+	</div>
+	<div class="max760">
+	<input type="submit" value="Show Me the Money">
+</form>
+<canvas id="valueCanvas" height="450" width="600"></canvas>
 <div id="valueTable"></div>
 <div id="valueSummary"></div>
+</div>
