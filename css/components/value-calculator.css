@@ -1,0 +1,76 @@
+input[type="text"], select  {
+	max-width: 80%;
+	margin-bottom: 5px;
+}
+
+label {
+	font-weight: 400;
+	color: #0F3F52;
+}
+
+label i {
+	font-weight: 300;
+	font-size: 20px;
+}
+
+#valueTable {
+	margin: 30px auto;
+	font-size: 18px;
+}
+
+#valueTable td {
+	text-align: center;
+}
+
+#valueTable .positiveValue {
+	background: #279066;
+	color: #eee;
+}
+
+.positiveValueText {
+	color: #279066;
+	font-weight: bold;
+}
+
+#valueTable .negativeValue {
+	background: #d14018;
+	color: #eee;
+}
+
+.negativeValueText {
+	color: #d14018;
+	font-weight: bold;
+}
+
+/* Parsley Form Validation styling */
+
+input.parsley-error,
+select.parsley-error,
+textarea.parsley-error {
+   color: #B94A48;
+   background-color: #F2DEDE;
+   border: 1px solid #EED3D7;
+}
+
+.parsley-errors-list {
+   max-width: 70%;
+   margin: 8px 0 3px 0;
+   padding: 0;
+   color: #B94A48;
+   list-style-type: none;
+   font-size: 18px;
+   line-height: 21px;
+   opacity: 0;
+   -moz-opacity: 0;
+   -webkit-opacity: 0;
+
+   transition: all .3s ease-in;
+   -o-transition: all .3s ease-in;
+   -ms-transition: all .3s ease-in;
+   -moz-transition: all .3s ease-in;
+   -webkit-transition: all .3s ease-in;
+}
+
+.parsley-errors-list.filled {
+   opacity: 1;
+}
